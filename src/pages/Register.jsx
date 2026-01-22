@@ -18,7 +18,7 @@ function Register({ setAuthPage }) {
     setIsLoading(true);
     setError("");
     try {
-      await axios.post("http://localhost:5000/api/auth/register", {
+      await axios.post("https://student-dashboard-backend-xxxx.onrender.com/api/auth/register", {
         name,
         email,
         password
