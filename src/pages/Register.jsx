@@ -1,6 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 
+const API = "https://student-dashboard-backend-yyua.onrender.com";
+
 function Register({ setAuthPage }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -18,7 +20,7 @@ function Register({ setAuthPage }) {
     setIsLoading(true);
     setError("");
     try {
-      await axios.post("https://student-dashboard-backend-yuya.onrender.com/api/auth/register", {
+      await axios.post(`${API}/api/auth/register`, {
         name,
         email,
         password
