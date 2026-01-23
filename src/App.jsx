@@ -4,7 +4,7 @@ import Auth from "./pages/Auth";
 import WeeklyCharts from "./components/WeeklyCharts";
 import logo from "./assets/StuduntHub.png";
 
-axios.defaults.baseURL = "https://student-dashboard-backend-yuya.onrender.com";
+axios.defaults.baseURL = "https://student-dashboard-backend-yyua.onrender.com";
 
 axios.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
